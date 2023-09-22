@@ -1,0 +1,388 @@
+:root {
+    --bg: #f5f6f8;
+    --blue: #131c29;
+    --orange: #ff8901;
+    --btn: #213349;
+    --date1: #be8442;
+    --date2: #bc6142;
+    --date3: #bd425e;
+    --bottomSec: #0b1016;
+    --bottomLtBl: #37577d;
+    /* --grad: radial-gradient(
+        at top center,
+        var(--bottomLtBl),
+        var(--bottomSec)
+        40%; */
+    --font:'Oswald', sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    /* border: 2px solid red; */
+}
+
+.inner {
+    /* border: 2px solid green; */
+    margin: 0 auto;
+    width: 90%;   
+}
+
+div {
+    /* border: 2px solid blue; */
+}
+
+/* ---------------------------------------header----------------------------------- */
+
+.top-header {
+    padding: 6px 0;
+    width: 100%;
+    background-color: var(--blue);
+}
+
+.th-list {
+    float: left;
+    margin: 0;
+    width: 50%;
+    padding-left: 0;
+    text-align: right;
+    list-style-type: none;
+}
+
+.th-text {
+    float: left;
+    margin: 8px 0 0 0;
+    width: 50%;
+}
+
+.th-text, .th-item {
+    font-size: 10px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.th-item {
+    border-right: 1px solid #777;
+    display: inline;
+    padding: 0 12px;
+}
+
+.th-item:last-child {
+    padding-right: 0;
+    border: none;
+}
+
+.th-link {
+    color: #777;
+}
+
+.logo, .nav {
+    /* border: 2px solid fuchsia; */
+    float: left;
+    width: 50%;
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo-img {
+    /* border: 1px solid red; */
+    margin-top: 5px;
+    width: 40%;
+    height: auto;
+}
+
+.nav-list {
+    margin-top: 48px;
+    padding-left: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+.nav-item {
+    display: inline;
+    padding: 10px 18px;
+    margin-right: 3px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: var(--blue);
+}
+
+.nav-item:hover {
+    background-color: var(--orange);
+}
+
+.nav-item:first-child {
+    background-color: var(--orange);
+}
+
+.nav-item:first-child:hover {
+    background-color: var(--blue);
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item a {
+    text-transform: uppercase;
+    color: var(--bg);
+}
+
+/* -------------------------------------------------main------------------------------------------------------------------- */
+
+.hero-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sliders {
+    margin: 10px auto;
+    width: 95px;
+    height: 30px;
+}
+
+.slider {
+    float: left;
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: #777;
+}
+
+.slider:hover {
+    background-color: var(--orange);
+}
+
+/* ----------------------------------------------content box----------------------------------------------------------- */
+
+.content-box {
+    float: left;
+    padding: 32px 20px;
+    width: 33.33%;
+}
+
+.content-box:first-child {
+    border-top: 1px solid #999;
+}
+
+.content-box:nth-child(2) {
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+.content-box:nth-child(3) {
+    border-top: 1px solid #999;
+}
+
+.content-h2 {
+    margin-top: 0;
+    font-size: 58px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.content-img {
+    width: 100%;
+    height: auto;
+}
+
+.content-text {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    color: #999;
+    line-height: 2;
+    font-weight: 200;
+}
+
+.more-btn {
+    padding: 12px 16px;
+    background-color: var(--btn);
+    color: var(--bg);
+    font-size: 16px;
+    /* font-weight: 500; */
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+
+/* -----------------------------------------------------footer---------------------------------------------------------- */
+
+/* gradients are a background image
+    add a fall-back color
+    reference:  https://css-tricks.com/css3-gradients/
+     */
+
+.top-section {
+    padding-bottom: 40px;
+    background-color: var(--blue);
+    background-image: radial-gradient(
+        at top center,
+        var(--bottomLtBl),
+        var(--bottomSec)
+        40%
+    );
+
+    /* background-image: var(--grad); */
+    width: 100%;
+}
+
+.footer-div {
+    padding: 30px 10px;
+    width: calc(100% / 3);
+    height: 560px;
+    float: left;
+}
+
+
+.footer-h2 {
+    color: var(--bg);
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/* add list-style images for cogs, etc. to replace bullets */
+/*   the ../ tells the browser to leave the css folder to go to the media folder to find the cog image */
+
+.services-list {
+    list-style-image: url('../media/cog.png');
+    padding-left: 16px;
+}
+
+.services-item {
+    font-weight: 300;
+    line-height: 2.5;
+}
+
+.services-link {
+    color: var(--bg);
+}
+
+.opp-list {
+    list-style-image: url('../media/chat.png');
+}
+
+.opp-item:first-child {
+    margin-bottom: 25px;
+}
+
+.footer-h3 {
+    margin: 0;
+    color: var(--bg);
+    font-weight: 400;
+}
+
+.opp-text {
+    margin: 0;
+    color: #777;
+    font-weight: 400;
+}
+
+.news-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.date-div {
+    float: left;
+    margin-right: 16px;
+    width: 72px;
+    height: 72px;
+    border-radius: 5px;
+}
+
+#date1 {
+    background-color: var(--date1);
+}
+
+#date2 {
+    background-color: var(--date2);
+}
+
+#date3 {
+    background-color: var(--date3);
+}
+
+.day-span, .month-span {
+    margin: 0;
+    display: block;
+    text-align: center;
+    color: var(--bg);
+}
+
+.day-span {
+    font-size: 26px;
+}
+
+.month-span {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.news-item {
+    /* border: 2px solid green; */
+    margin-bottom: 16px;
+}
+
+.news-block {
+    float: left;
+    width: 240px;
+    height: 72px;
+    color: #888;
+}
+
+.news-text {
+    margin: 0;
+    /* margin-bottom: 16px; */
+    font-size: 14px;
+}
+
+#moreBtn4 {
+    /* border: 1px solid white; */
+    margin-top: 41px;
+}
+
+#moreBtn5 {
+    margin-top: 137px;
+}
+
+#moreBtn6 {
+    margin-top: 113px;
+}
+
+.bottom-section {
+    padding-bottom: 40px;
+    background-color: var(--bottomSec);
+}
+
+.colophon {
+    margin: 0;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.colophon a {
+    color: #777;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+.clear {
+    clear: both;
+}

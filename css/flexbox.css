@@ -1,0 +1,392 @@
+:root {
+    --bg: #f5f6f8;
+    --blue: #131c29;
+    --orange: #ff8901;
+    --btn: #213349;
+    --date1: #be8442;
+    --date2: #bc6142;
+    --date3: #bd425e;
+    --bottomSec: #0b1016;
+    --bottomLtBl: #37577d;
+    /* --grad: radial-gradient(
+        at top center,
+        var(--bottomLtBl),
+        var(--bottomSec)
+        40%; */
+    --font:'Oswald', sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: var(--font);
+}
+
+.inner {
+    margin: 0 auto;
+    width: 90%;   
+}
+
+header, main, footer, h1, h2, h3, p, nav, ul, li {
+    margin: 0;
+}
+
+
+.top-header {
+    display: flex;
+    height: 50px;
+    background-color: var(--blue);
+    border: none;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.th-item {
+    display: inline;
+    margin-right: 8px;
+    padding: 0 6px;
+    border-right: 1px solid #777;
+}
+
+.th-item:last-child {
+    margin-right: 0;
+    border-right: none;
+}
+
+.th-link {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--bg);
+}
+
+.bottom-header .inner {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    height: 120px;
+}
+
+.nav {
+    display: inline;
+}
+
+
+.nav-item {
+    display: inline;
+    margin-left: 5px;
+    padding: 10px 18px;
+    border-radius: 5px;
+    background-color: var(--blue);
+}
+
+
+.nav-item:hover {
+    background-color: var(--orange);
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--bg);
+}
+
+/* -------------------------------------------------main----------------------------------------------------------- */
+
+
+.branding .inner {
+    /* display: flex;
+    justify-content: center; */
+}
+
+.hero-img {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sliders {
+    display: flex;
+    margin: 0 auto;
+    width: 79px;
+    height: 25px;
+}
+
+.slider {
+    background-color: #999;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.slider:hover {
+    background-color: var(--orange);
+}
+
+#slider2 {
+    margin: 0 2px;
+}
+
+/* ------------------------------------content-section-------------------------- */
+
+.content-section .inner {
+    display: flex;
+    padding-top: 20px;
+    height: 640px;
+}
+
+.content-box {
+    border-top: 1px solid #777;
+    height: 620px;
+}
+
+#contentBox2 {
+    padding-left: 15px;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+}
+
+#contentBox3 {
+    padding-left: 15px;
+}
+
+.content-box h2 {
+    margin: 20px 0;
+    font-size: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.content-img {
+    width: 97%;
+}
+
+.content-text {
+    margin: 40px 20px 40px 0;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.content-text-div .more-btn {
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: var(--blue);
+    color: var(--bg);
+    border-radius: 5px;
+}
+
+/* ---------------------------------------footer--------------------------------------------- */
+
+
+footer {
+    padding: 80px 0;
+    height: 680px;
+    background-color: var(--blue);
+    background-image: radial-gradient(
+        at top center, 
+        var(--bottomLtBl),
+        var(--blue)
+        43%
+    );
+}
+
+
+.top-section .inner {
+    display: flex;
+}
+
+.footer-flex-div {
+    /* border: 2px solid yellow; */
+    display: flex;
+    width: calc(100% / 3);
+    height: 600px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 520px;
+}
+
+.services-inner, .opp-inner, .news-inner {
+    /* height: 400px; */
+}
+
+.opp-inner {
+}
+
+.news-inner {
+}
+
+.footer-div h2 {
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--bg);
+}
+
+.services-list {
+    padding-left: 20px;
+    list-style-image: url(../media/cog.png);
+}
+
+.services-item {
+    margin: 6px 0;
+}
+
+.services-link {
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--bg);
+}
+
+.services-link:hover {
+    color: #999;
+}
+
+.footer .more-btn {
+    align-self: flex-start;
+    font-size: 36px;
+    text-transform: uppercase;
+    background-color: var(--bottomLtBl);
+    color: var(--bg);
+    border-radius: 5px;
+}
+
+
+.opp-list {
+    padding-left: 20px;
+    list-style-image: url(../media/chat.png);
+}
+
+.opp-item {
+    height: 178px;
+}
+
+.footer-h3 {
+    font-size: 20px;
+}
+
+.opp-text {
+    padding-right: 40px;
+}
+
+.footer-h3, .opp-text {
+    font-weight: 300;
+    color: var(--bg);
+}
+
+.services-list, .footer-h3 {
+    font-size: 26px;
+}
+
+.opp-text, .news-text {
+    font-size: 16px;
+    /* adjust line-height if needed */
+    line-height: 2;
+    color: #999;
+}
+
+.news-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-item {
+    display: flex;
+    justify-content: space-between;
+    height: 125px;
+}
+
+.date-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.day-span {
+    font-size: 40px;
+    /* flex-grow: 2; */
+    /* font-size: 24px; */
+}
+
+.month-span {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#date1 {
+    background-color: var(--date1);
+}
+
+#date2 {
+    background-color: var(--date2);
+}
+
+#date3 {
+    background-color: var(--date3);
+}
+ 
+.news-block {
+    width: 260px;
+}
+
+.footer-div .more-btn {
+    /* margin: 0; */
+}
+
+#moreBtn4 {
+}
+
+#moreBtn5 {
+}
+
+.bottom-section {
+    background-color: var(--bottomSec);
+    padding-top: 20px;
+    width: 100%;
+    height: 160px;
+}
+
+.bottom-section .inner {
+    display: flex;
+}
+
+.colophon {
+    padding-left: 3px;
+    width: 220px;
+    height: 30px;
+    display: block;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.colophon a {
+    color: #777;
+}
